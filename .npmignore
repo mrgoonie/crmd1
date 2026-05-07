@@ -1,0 +1,12 @@
+src/
+tests/
+tsconfig.json
+tsup.config.ts
+vitest.config.ts
+biome.json
+.editorconfig
+.nvmrc
+.gitignore
+coverage/
+plans/
+docs/

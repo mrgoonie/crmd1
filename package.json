@@ -1,0 +1,70 @@
+{
+  "name": "crmd1",
+  "version": "0.1.0",
+  "description": "CLI + MCP server for Cloudflare D1-backed CRM, designed for AI agents and humans",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "crm",
+    "cloudflare",
+    "d1",
+    "mcp",
+    "cli",
+    "sqlite",
+    "ai-agent",
+    "claude",
+    "llm-tools"
+  ],
+  "author": "mrgoonie",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mrgoonie/crmd1.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mrgoonie/crmd1/issues"
+  },
+  "homepage": "https://github.com/mrgoonie/crmd1#readme",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "bin": {
+    "crmd1": "./dist/cli.js",
+    "crmd1-mcp": "./dist/mcp.js"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "biome lint .",
+    "format": "biome format --write .",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "pnpm build && pnpm test --run"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "cli-table3": "^0.6.5",
+    "commander": "^12.1.0",
+    "uuidv7": "^1.0.2",
+    "zod": "^3.23.8"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": ["@biomejs/biome", "better-sqlite3", "esbuild"]
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@types/better-sqlite3": "^7.6.12",
+    "@types/node": "^22.0.0",
+    "@vitest/coverage-v8": "^2.1.0",
+    "better-sqlite3": "^11.3.0",
+    "tsup": "^8.3.0",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.0"
+  }
+}
