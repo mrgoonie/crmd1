@@ -19,7 +19,7 @@ describe('configDir()', () => {
 
     const { configDir } = await import('./config.js');
     const dir = configDir();
-    expect(dir).toBe('C:\\Users\\test\\AppData\\Roaming\\crmd1');
+    expect(dir).toBe(join('C:\\Users\\test\\AppData\\Roaming', 'crmd1'));
 
     Object.defineProperty(process, 'platform', { value: originalPlatform, configurable: true });
   });

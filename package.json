@@ -1,5 +1,5 @@
 {
-  "name": "crmd1",
+  "name": "crm-d1",
   "version": "0.1.0",
   "description": "CLI + MCP server for Cloudflare D1-backed CRM, designed for AI agents and humans",
   "type": "module",

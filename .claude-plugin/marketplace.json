@@ -1,0 +1,19 @@
+{
+  "name": "crmd1",
+  "owner": {
+    "name": "crmd1 maintainers",
+    "url": "https://github.com/mrgoonie/crmd1"
+  },
+  "description": "Official plugin marketplace for crmd1 — CLI/MCP CRM on Cloudflare D1.",
+  "plugins": [
+    {
+      "name": "crmx",
+      "source": "./plugins/crmx",
+      "description": "Master the crmd1 CLI for Task, Customer, Agency/Partner, and Company Member management.",
+      "version": "0.1.0",
+      "category": "productivity",
+      "tags": ["crm", "cli", "cloudflare-d1", "tasks", "customers"],
+      "strict": false
+    }
+  ]
+}
