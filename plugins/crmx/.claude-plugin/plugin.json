@@ -1,0 +1,14 @@
+{
+  "name": "crmx",
+  "version": "0.1.0",
+  "description": "Master the crmd1 CLI for Task, Customer, Agency/Partner, and Company Member management on Cloudflare D1.",
+  "author": {
+    "name": "crmd1 maintainers",
+    "url": "https://github.com/mrgoonie/crmd1"
+  },
+  "homepage": "https://github.com/mrgoonie/crmd1",
+  "repository": "https://github.com/mrgoonie/crmd1",
+  "license": "MIT",
+  "keywords": ["crm", "cloudflare", "d1", "cli", "skill"],
+  "skills": ["./skills/crmx"]
+}
