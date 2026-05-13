@@ -4,7 +4,7 @@ Detailed record of significant changes, features, fixes, and releases.
 
 ---
 
-## Unreleased
+## 0.1.1 — 2026-05-13
 
 ### Features
 
@@ -15,8 +15,12 @@ Detailed record of significant changes, features, fixes, and releases.
 
 ### Changes
 
-- **Package rename**: `crm-d1` (was `crmd1`). Updated npm install: `npm i -g crm-d1`.
 - **Test portability**: `src/core/config.test.ts` uses `join()` for cross-platform path expectations.
+
+### CI / Tooling
+
+- `.github/workflows/release.yml`: Tag-driven (`v*.*.*`) pipeline — typecheck, test, build, `npm publish --access public --provenance`, GitHub Release with auto-generated notes.
+- `.github/workflows/ci.yml`: Typecheck + test + build on PR and push to `main`.
 
 ---
 
