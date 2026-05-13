@@ -4,6 +4,22 @@ Detailed record of significant changes, features, fixes, and releases.
 
 ---
 
+## Unreleased
+
+### Features
+
+- **Claude Code Plugin** (`crmx`): Marketplace entry at `.claude-plugin/marketplace.json` enables `/plugin marketplace add mrgoonie/crmd1` → `/plugin install crmx@crmd1`.
+  - SKILL.md (173 lines): Teaches Claude to drive CLI for Task Management, Customer Management, Agency/Partner Management, Company Member Management.
+  - `references/cli-cheatsheet.md`: One-page command map.
+  - `references/schema.md`: Entity field reference.
+
+### Changes
+
+- **Package rename**: `crm-d1` (was `crmd1`). Updated npm install: `npm i -g crm-d1`.
+- **Test portability**: `src/core/config.test.ts` uses `join()` for cross-platform path expectations.
+
+---
+
 ## 0.1.0 — 2026-05-08
 
 ### Features

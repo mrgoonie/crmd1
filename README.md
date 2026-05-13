@@ -19,14 +19,25 @@ A CLI and MCP server for a Cloudflare D1-backed CRM — built for AI agents and 
 ## Install
 
 ```sh
-npm i -g crmd1
+npm i -g crm-d1
 ```
 
 Or run without installing:
 
 ```sh
-npx crmd1 --help
+npx crm-d1 --help
 ```
+
+### Claude Code Plugin
+
+Enhance Claude's ability to drive the CLI:
+
+```
+/plugin marketplace add mrgoonie/crmd1
+/plugin install crmx@crmd1
+```
+
+See [`plugins/crmx/README.md`](./plugins/crmx/README.md) for details on the `crmx` skill.
 
 ---
 
